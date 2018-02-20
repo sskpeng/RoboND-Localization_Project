@@ -5,11 +5,11 @@ obstacle_range: 5.0 # 1.5
 # The "raytrace_range" parameter determines the range to which we will raytrace freespace given a sensor reading. 
 raytrace_range: 8.0 # 4.0
 
-transform_tolerance: 0.2 # 1.25
+transform_tolerance: 1.25 # 1.25
 
 # The footprint of the robot or the radius of the robot if it is circular
-robot_radius: 0.0 # 0.3
-inflation_radius: 0.55 # 0.65
+robot_radius: 0.2 # 0.3
+inflation_radius: 0.5 # 0.65
 
 # The "observation_sources" parameter defines a list of sensors that are going to be passing information to the costmap separated by spaces. Each sensor is defined in the next lines.
 observation_sources: laser_scan_sensor

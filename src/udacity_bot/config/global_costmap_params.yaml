@@ -10,7 +10,7 @@ global_costmap:
    # The "width," "height," and "resolution" parameters set the width (meters), height (meters), and resolution (meters/cell) of the costmap.
    width: 40.0
    height: 40.0
-   resolution: 0.2 # 0.05
+   resolution: 0.1 # 0.05
    # The "static_map" parameter determines whether or not the costmap should initialize itself based on a map served by the map_server. If you aren't using an existing map or map server, set the static_map parameter to false.
    static_map: true
    # Setting the "rolling_window" parameter to true means that the costmap will remain centered around the robot as the robot moves through the world.

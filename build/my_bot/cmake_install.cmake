@@ -1,8 +1,8 @@
-# Install script for directory: /home/robond/catkin_ws/src/my_bot
+# Install script for directory: /home/workspace/catkin_ws/src/my_bot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robond/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/workspace/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robond/catkin_ws/build/my_bot/catkin_generated/installspace/my_bot.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/workspace/catkin_ws/build/my_bot/catkin_generated/installspace/my_bot.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_bot/cmake" TYPE FILE FILES
-    "/home/robond/catkin_ws/build/my_bot/catkin_generated/installspace/my_botConfig.cmake"
-    "/home/robond/catkin_ws/build/my_bot/catkin_generated/installspace/my_botConfig-version.cmake"
+    "/home/workspace/catkin_ws/build/my_bot/catkin_generated/installspace/my_botConfig.cmake"
+    "/home/workspace/catkin_ws/build/my_bot/catkin_generated/installspace/my_botConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_bot" TYPE FILE FILES "/home/robond/catkin_ws/src/my_bot/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_bot" TYPE FILE FILES "/home/workspace/catkin_ws/src/my_bot/package.xml")
 endif()
 

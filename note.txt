@@ -1,0 +1,2 @@
+NOTE:
+Choose and hide /src/my_bot or /src/udacity_bot to run.

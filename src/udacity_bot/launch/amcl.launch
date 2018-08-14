@@ -5,10 +5,6 @@
   <arg name="map_file" default="$(find udacity_bot)/maps/jackal_race.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
-  <!-- Place map frame at odometry frame -->
-  <node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster"
-      args="0 0 0 0 0 0 map odom 100"/>
-
   <!-- Localization-->
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
     <remap from="scan" to="udacity_bot/laser/scan"/>
@@ -16,12 +12,10 @@
     <param name="odom_model_type" value="diff-corrected"/>
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
-    
-    <!-- Creating an AMCL yaml parameter file for tuning -->
     <rosparam file="$(find udacity_bot)/config/amcl.yaml" command="load" />
   </node>
-	
-<!-- Move base -->
+  
+  <!-- Move base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <rosparam file="$(find udacity_bot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find udacity_bot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
